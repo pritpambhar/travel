@@ -15,7 +15,7 @@
     <?php
 		if(isset($_POST["submit"]))
 		{
-			$con=mysqli_connect("localhost","root","root","test_db");
+			$con=mysqli_connect("35.200.206.39","root","root","test_db");
 			$cmd=mysqli_query($con,"insert into register (email,password) values ('".$_POST["email"]."','".$_POST["password"]."')");
 		}
 	?>
